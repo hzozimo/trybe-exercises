@@ -6,3 +6,5 @@ FEVEREIRO
     javascript
 
 Atualizarei o conteúdo desse README a mês a mês com o que aprenderei no mês atual
+
+temp: Alteração para teste de commit usando diferentes branches e comparação via github
