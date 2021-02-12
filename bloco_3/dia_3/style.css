@@ -27,3 +27,39 @@
     border-color: black;
     border-style: solid;
   }
+
+  .super-mario{
+      position: absolute;
+      z-index: 1;
+      left: 50px;
+      width: 100px;
+  }
+
+  .goomba{
+      position: absolute;
+      z-index: 2;
+      top: 210px;
+      left: 50px;
+      width: 100px;
+  }
+
+  .baloon{
+    position: absolute;
+    z-index: 4;
+    top: 350px;
+    width: 170px;
+}
+
+.bowser{
+    position: absolute;
+    z-index: 3;
+    top: 420px;
+    left: 170px;
+    width: 100px;
+}
+
+.word{
+    position: absolute;
+    top: 370px;
+    z-index: 5;
+}
