@@ -1,5 +1,6 @@
 body {
     background-color: #BCF8EC ;
+    color: #8E9DCC;
 }
 .header {
     text-align: center;
@@ -12,6 +13,7 @@ body {
     display: inline-block;
     margin: 20px 20px 20px 20px;
     text-align: center;
+    color: #8E9DCC;
 }
 
 .main-article {
@@ -37,3 +39,15 @@ h1, h2, h3, h4, h5 {
 .about ul li {
     color: #3E517A;
 }
+
+.article {
+    color: black;
+}
+
+.sup {
+    position: relative;
+    bottom: 1ex; 
+    font-size: 80%;
+    /* código retirado do site https://stackoverflow.com/questions/12875645/html-css-layout-number-to-the-power-of-expression-ax */
+  }
+  
