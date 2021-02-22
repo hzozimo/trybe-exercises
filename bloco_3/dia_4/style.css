@@ -62,3 +62,11 @@ h1, h2, h3, h4, h5 {
     margin: auto;
     width: 400px;
 }
+
+.bibliography {
+    text-align: left;
+}
+
+.bibliography h4{
+    text-align: left;
+}
