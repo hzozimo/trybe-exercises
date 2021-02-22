@@ -51,3 +51,14 @@ h1, h2, h3, h4, h5 {
     /* código retirado do site https://stackoverflow.com/questions/12875645/html-css-layout-number-to-the-power-of-expression-ax */
   }
   
+.punch-image {
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+.super-vision {
+    display: block;
+    margin: auto;
+    width: 400px;
+}
