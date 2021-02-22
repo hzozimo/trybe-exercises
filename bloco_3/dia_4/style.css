@@ -5,3 +5,35 @@ body {
     text-align: center;
     color: #D5573B;
 }
+.navigation {
+    text-align: center;
+}
+.navigation ul li{
+    display: inline-block;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.main-article {
+    text-align: center;
+    color: #D5573B;
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    color: #D5573B;
+}
+
+.about {
+    border-color: #4B644A;
+    border-style: solid;
+    
+}
+
+.about ul {
+    list-style-type: none;
+}
+
+.about ul li {
+    color: #3E517A;
+}
