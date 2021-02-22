@@ -1,0 +1,86 @@
+/* Parte I */
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
+
+  .padding {
+  /* insira aqui um padding de 20px na classe abaixo para aplicá-lo aos itens B, C e D */
+    padding: 20px;
+  }
+
+  .margin {
+  /* insira aqui uma margem de 30px na classe abaixo para aplicá-la aos itens C e D */
+    margin: 30px;
+  }
+
+  .border {
+  /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  /* parte II */
+  .super-mario{
+      position: absolute;
+      z-index: 1;
+      left: 50px;
+      width: 100px;
+  }
+
+  .goomba{
+      position: absolute;
+      z-index: 2;
+      top: 210px;
+      left: 50px;
+      width: 100px;
+  }
+
+  .baloon{
+    position: absolute;
+    z-index: 4;
+    top: 350px;
+    width: 170px;
+}
+
+.bowser{
+    position: absolute;
+    z-index: 3;
+    top: 420px;
+    left: 170px;
+    width: 100px;
+}
+
+.word{
+    position: absolute;
+    top: 370px;
+    z-index: 5;
+}
+
+/* parte III */
+
+h1 {
+    text-align: center;
+}
+
+li:hover {
+    background-color: plum;
+}
+
+li:active {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+
+ol, ul {
+    list-style: none;
+}
