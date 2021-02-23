@@ -82,3 +82,7 @@ h1, h2, h3, h4, h5 {
     
 
 }
+
+.footer h4 {
+    text-align: left;
+}
