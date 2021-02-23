@@ -17,8 +17,10 @@ body {
 }
 
 .main-article {
+    display: inline-block;
     text-align: center;
     color: #D5573B;
+    width: 50%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -56,17 +58,27 @@ h1, h2, h3, h4, h5 {
     margin: auto;
     width: 400px;
 }
-
+.vision {
+    border-color: #4B644A;
+    border-style: solid;
+}
 .super-vision {
     display: block;
     margin: auto;
     width: 400px;
+    
 }
 
 .bibliography {
     text-align: left;
 }
 
-.bibliography h4{
+.bibliography h2{
     text-align: left;
+}
+
+.sidebar{
+    display: inline-block;
+    
+
 }
