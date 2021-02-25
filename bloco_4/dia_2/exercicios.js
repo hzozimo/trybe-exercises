@@ -31,3 +31,6 @@ if (mediaAritimetica > 20) {
 else {
     console.log("valor menor ou igual a 20")
 }
+
+//exercicio 5
+//
