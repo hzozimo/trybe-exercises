@@ -56,3 +56,32 @@ if (impar > 0) {
 } else{
     console.log("Nenhum valor ímpar encontrado")
 }
+
+//exercicio 7
+//Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+
+let menor = numbers[0];
+for (let i = 0; i < numbers.length; i++) {
+    if (menor > numbers[i]) { 
+        menor = numbers[i]
+    }
+}
+console.log(`O menor número é ${menor}`)
+
+//exercicio 8
+//Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado;
+
+let numbers2 =[];
+
+for (index = 1; index <= 25; index++) {
+    numbers2.push(index)
+}
+console.log(`${numbers2}`)
+
+//exercicio 9
+//Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 
+let divisao = []
+for (index = 0; index < 25; index++) {
+    divisao.push((numbers2[index] / 2))
+}
+console.log(`${divisao}`)
