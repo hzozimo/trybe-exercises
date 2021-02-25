@@ -1,4 +1,4 @@
-let peca = "Rainha"
+let peca = "Rain"
 
 let pecaMinusculo = peca.toLowerCase()
 
@@ -24,4 +24,6 @@ switch (pecaMinusculo) {
     case "rei":
         console.log("A peça se move 1 espaço na vertical, horizontal e diagonal")
         break;
+    default:
+        console.log("Essa peça não existe")
 }
