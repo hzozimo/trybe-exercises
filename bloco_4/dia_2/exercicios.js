@@ -33,4 +33,26 @@ else {
 }
 
 //exercicio 5
-//
+//Utilizando for , descubra qual o maior valor contido no array e imprima-o;
+
+let maior = numbers[0];
+for (let i = 0; i < numbers.length; i++) {
+    if (maior < numbers[i]) { 
+        maior = numbers[i]
+    }
+}
+console.log(`O maior número é ${maior}`)
+
+//exercícío 6
+//Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
+let impar = 0;
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i]%2 == 1){
+        impar++
+    }
+}
+if (impar > 0) {
+    console.log(`Quantidade de números ímpares: ${impar}`)
+} else{
+    console.log("Nenhum valor ímpar encontrado")
+}
