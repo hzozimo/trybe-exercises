@@ -88,10 +88,41 @@ function repetidos (array) {
     }
     
     
-    console.log(contagem);
+    // console.log(contagem);
     console.log('O valor que mais se repete é o '+ chave)
 
 }
 
 repetidos([2, 3, 2, 5, 8, 2, 3]);
 
+//Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+// Valor de teste: N = 5 .
+// Valor esperado no retorno da função: 1+2+3+4+5 = 15 .
+
+function somatorio (n){
+    let soma =0;
+    for (index = 0; index <= n ; index++) {
+        soma = soma + index;
+    }
+    return soma
+}
+
+console.log(somatorio(5));
+
+// Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+
+function verificaFimpalavra (palavra, fim){
+    palavraInvertida = palavra.split("").reverse();
+    fimInvertido = fim.split("").reverse();
+    let contador = 0;
+    for (index=0; index<=fimInvertido.length; index++){
+        if (fimInvertido[index]==palavraInvertida[index]){
+            contador++;
+        }
+    }
+    console.log(contador == fimInvertido.length)
+
+}
+
+verificaFimpalavra("trybe", "be");
+verificaFimpalavra("joaofernando", "fernan");
