@@ -57,7 +57,67 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+     let criarH1 = document.createElement('h1');
+     document.body.appendChild(criarH1);
+     document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.2 - JavaScript DOM'
+     let criarDiv = document.createElement('div');
+     document.body.appendChild(criarDiv);
+     document.getElementsByTagName('div')[0].className = 'main-content';
+     document.getElementsByTagName('div')[0].id = 'main-content';
+     let mainContent = document.getElementsByClassName('main-content');
+     mainContent[0].appendChild(document.createElement('div'));
+     mainContent[0].getElementsByTagName('div')[0].className = 'center-content';
+     mainContent[0].getElementsByTagName('div')[0].id = 'center-content';
+     let centerContentClass = document.getElementsByClassName('center-content');
+     let centerContentId = document.getElementById('center-content');
+     centerContentId.appendChild(document.createElement('p'));
+     document.getElementsByTagName('p')[0].innerText = 'Ad esse in ex non ad ex exercitation in ea nostrud laboris veniam esse exercitation.';
+     centerContentId.appendChild(document.createElement('div'));
+     centerContentId.getElementsByTagName('div')[0].className = 'left-content';
+     centerContentId.getElementsByTagName('div')[0].id = 'left-content';
+     let leftContent = document.getElementById('left-content');
+     centerContentId.appendChild(document.createElement('div'));
+     centerContentId.getElementsByTagName('div')[1].className = 'right-content';
+     centerContentId.getElementsByTagName('div')[1].id = 'right-content';
+     let rightContent = document.getElementById('right-content');
+     leftContent.appendChild(document.createElement('img'));
+     leftContent.getElementsByTagName('img')[0].src = 'https://picsum.photos/200';
+     leftContent.getElementsByTagName('img')[0].className = 'small-image';
+     leftContent.getElementsByTagName('img')[0].id = 'small-image';
+     rightContent.appendChild(document.createElement('ul'));
+     rightContent.getElementsByTagName('ul')[0].id = 'listaNaoOrdenada';
+     let conteudoLista = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+     for (let index = 0; index < conteudoLista.length; index += 1) {
+      listaNaoOrdenada.appendChild(document.createElement('li'));
+      listaNaoOrdenada.getElementsByTagName('li')[index].innerText = conteudoLista[index];
+     }
+     mainContent[0].appendChild(document.createElement('h3'));
+     mainContent[0].appendChild(document.createElement('h3'));
+     mainContent[0].appendChild(document.createElement('h3'));
+
+
+     document.getElementsByTagName('h1')[0].className = 'title';
+     mainContent[0].getElementsByTagName('h3')[0].className = 'description';
+     mainContent[0].getElementsByTagName('h3')[1].className = 'description';
+     mainContent[0].getElementsByTagName('h3')[2].className = 'description';
+     
+     centerContentId.removeChild(document.getElementById('left-content'));
+     centerContentId.style.marginRight = 'auto';
+     mainContent[0].style.backgroundColor = 'green';
+
+     document.getElementById('listaNaoOrdenada').lastChild.remove();
+     document.getElementById('listaNaoOrdenada').lastChild.remove();
+     
+
+
+     
+     
+
+
+
+     
+
+
     </script>
   </body>
 </html>
