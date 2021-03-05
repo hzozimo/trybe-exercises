@@ -20,4 +20,12 @@ function createDaysOfTheWeek() {
   for (index = 0; index < dezDaysList.length; index +=1) {
     listaDias.appendChild(document.createElement('li'));
     listaDias.getElementsByTagName('li')[index].innerText = dezDaysList[index];
+    listaDias.getElementsByTagName('li')[index].className = 'day';
+     if (index === 24 || index === 25 || index === 31) {
+        listaDias.getElementsByTagName('li')[index].className += ' holiday';
+     }
+     if (index === 4 || index === 11 || index === 18 || index === 25) {
+        listaDias.getElementsByTagName('li')[index].className += ' friday';
+     }
+
   }
