@@ -85,3 +85,22 @@ function adicionaClickSextas () {
 }
 
 adicionaClickSextas();
+
+function zoomIn() {
+   let dias = document.querySelector('#days');
+ 
+   dias.addEventListener('mouseover', function(event) {
+     event.target.style.fontSize = '40px';
+     })
+ };
+ 
+ function zoomOut() {
+   let dias = document.querySelector('#days');
+ 
+   dias.addEventListener('mouseout', function(event) {
+     event.target.style.fontSize = '20px';
+   })
+ };
+ 
+ zoomIn();
+ zoomOut();
