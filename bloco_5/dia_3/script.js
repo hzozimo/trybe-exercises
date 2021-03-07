@@ -104,3 +104,17 @@ function zoomIn() {
  
  zoomIn();
  zoomOut();
+
+
+ function novaTarefa(tarefa) {
+
+   let minhasTarefas = document.querySelector('.my-tasks');
+   let nomeTarefa = document.createElement('span');
+ 
+   minhasTarefas.appendChild(nomeTarefa);
+   minhasTarefas.getElementsByTagName('span')[0].innerHTML = tarefa;
+   // nomeTarefa.innerHTML = tarefa;
+   
+ };
+ 
+ novaTarefa('Tarefa');
