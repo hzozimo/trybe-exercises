@@ -13,7 +13,7 @@
     </header>
     <main>
         <form action="" method="GET">
-            <fieldset>
+            <fieldset id="dados-pessoais">
                 <label for="name">Nome:</label>
                 <input type="text" maxlength="40" required id="name">
                 <br>
@@ -29,11 +29,22 @@
                 <label for="cidade">Cidade:</label>
                 <input type="text" id="cidade" maxlength="28" required>
                 <br>
-                <label for="estado">Endereço:</label>
+                <label for="estado">Estado:</label>
                 <select id="estado" required>
                 </select>
+                <br>
+                <label for="casa">Casa</label>
+                <input type="radio" id="casa" required name="residencia" value="casa">
+                <label for="apartamento">Apartamento</label>
+                <input type="radio" id="apartamento" required name="residencia" value="apartamento">
+            </fieldset>
+            <fieldset id="ultimo-emprego">
+                <label for="resumo">Resumo do currículo</label>
+                <textarea required maxlength="1000" id="resumo" name="resumo" cols="50" rows="10" placeholder="Seu resumo aqui"></textarea>
+
             </fieldset>
         </form>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
