@@ -10,3 +10,5 @@ function adicionaEstados() {
     }
 }
 adicionaEstados();
+
+document.getElementById('data-inicio').DatePickerX.init();
