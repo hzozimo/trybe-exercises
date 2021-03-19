@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (max-width: 502px) {
+    body {
+        background-color: black;
+        color: blanchedalmond;
+    }
+    p {
+        font-size: 24px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 502px) and (max-width: 1000px) {
+    body {
+        background-color: black;
+        color: blanchedalmond;
+    }
+    p {
+        font-size: 20px;
+        text-align: justify;
+    }
+}
