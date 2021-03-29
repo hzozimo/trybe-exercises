@@ -12,6 +12,6 @@ const newEmployees = () => {
     return employees;
   };
 
-const employees = newEmployees();
+const empregados = newEmployees();
 
-console.table(employees);
+console.table(empregados);
