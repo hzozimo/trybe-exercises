@@ -1,19 +1,20 @@
 import { useEffect, useContext } from 'react';
 import './App.css';
-import Context from './context/Context';
+import HookContext from './context/HookContext';
 
 function App() {
   const TEN_SECONDS = 10000;
-  const { number, setNumber} = useContext(Context);
+  const { number, setNumber } = useContext(HookContext);
 
   useEffect(() => { 
     setInterval( () => {
-      setNumber(Math.random()*10);
+      setNumber(Math.random()*100);
     }, TEN_SECONDS)
-  })
+  },[number])
+
   return (
     <div className="App">
-      <h1> {number}</h1>
+      <h1> {number} </h1>
     </div>
   );
 }

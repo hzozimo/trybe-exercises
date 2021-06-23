@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HookProvider from './context/HookProvider';
 
 ReactDOM.render(
+ 
   <React.StrictMode>
-    <App />
+    <HookProvider> 
+      <App />
+    </HookProvider>
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 
