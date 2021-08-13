@@ -1,0 +1,5 @@
+db.movies.find();
+db.movies.find({"title": "Home Alone"});
+
+db.movies.updateOne({title: "Batman"}, {$set: {title: "Batman 2"}});
+db.movies.find({"title": "Batman 2"});
