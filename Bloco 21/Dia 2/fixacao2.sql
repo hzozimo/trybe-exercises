@@ -1,0 +1,2 @@
+select f1.film_id, f1.replacement_cost from sakila.film as f1, sakila.film as f2 where f1.replacement_cost = f2.replacement_cost;
+select f1.title, f1.rental_duration from sakila.film as f1, sakila.film as f2 where f1.length= f2.length and f1.rental_duration between 2 and 4; 

@@ -1,0 +1,4 @@
+select first_name, last_name from sakila.actor union all select first_name, last_name from sakila.staff;
+select first_name from sakila.customer where first_name like "%tracy%" union select first_name from sakila.actor where first_name like "%je%";
+(select first_name from sakila.actor order by actor_id desc limit 5) union (select first_name from sakila.staff limit 1) union (select first_name from sakila.customer limit 5 offset 15 ) order by first_name;
+(select first_name, last_name from sakila.customer) union all (select first_name, last_name from sakila.actor) order by first_name asc, last_name asc limit 15 offset 45;
