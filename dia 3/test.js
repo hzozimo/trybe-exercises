@@ -1,5 +1,7 @@
 const { expect } = require('chai');
-const testePositivo = require('./exercise');
+const {testePositivo, escreveArquivo} = require('./exercise');
+const fs = require('fs');
+const sinon = require('sinon');
 
 
 describe('testa se', () => {
@@ -28,4 +30,18 @@ describe('testa se', () => {
 
     expect(neutro).to.be.equals('neutro');
   });
+})
+
+describe('Verifica se escreve Arquivo', () => {
+  before(() => {
+    sinon.stub(fs, 'writeFileSync').returns('SOCORRO SUBI NO ONIBUS EM MARROCOS');
+  });
+  after(() => {fs.writeFileSync.restore()});
+  it('a resposta é ok', () => {
+  
+    const resposta = escreveArquivo('teste.txt', 'SOCORRO SUBI NO ONIBUS EM MARROCOS');
+
+    expect(resposta).to.be.equals('ok');
+
+  })
 })

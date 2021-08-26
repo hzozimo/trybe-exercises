@@ -1,6 +1,8 @@
+const fs = require('fs');
+
 
 const testePositivo = (n) => {
-  if (typeof(n) !== 'number') return 'o valor deve ser um número'
+  if (typeof n !== 'number') return 'o valor deve ser um número'
   if (n > 0) return 'positivo'
   if ( n < 0) return 'negativo'
 
@@ -8,4 +10,11 @@ const testePositivo = (n) => {
 
 }
 
-module.exports = testePositivo;
+const escreveArquivo = (nome, conteudo) =>{
+  fs.writeFileSync(`./${nome}`, conteudo);
+
+  return 'ok'
+
+}
+
+module.exports = {testePositivo, escreveArquivo};
